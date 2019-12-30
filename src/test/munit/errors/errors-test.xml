@@ -13,8 +13,8 @@
 
   <munit:config name="errors-test-suite"/>
 
-  <!--TODO : Ignore until APIKIT-2517 gets resolved-->
-  <munit:test name="on-error-continue-on-main-flow-error-handler" ignore="#[true]">
+  <!--TODO : Ignore until APIKIT-2517 gets resolved]" -->
+  <munit:test name="on-error-continue-on-main-flow-error-handler" ignore="#[Munit::muleVersionNewerThan('4.1.9')]">
     <munit:enable-flow-sources>
       <munit:enable-flow-source value="errors-main"/>
       <munit:enable-flow-source value="get:\orders:errors-config"/>
